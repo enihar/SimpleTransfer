@@ -15,7 +15,7 @@ namespace SimpleTransfer
             if (accnt.Balance > 0)  // checking if balance is not already overdrawn
             {
                 if (amount > accnt.Balance)  // if amount to be withdrawn is greater than balance, adda a fee of 2%
-                {
+                { 
                     AddFees(ref amount, accnt.Balance);
                 }
                 accnt.Balance -= amount;
